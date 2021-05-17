@@ -86,4 +86,4 @@ application to Cube Cloud API.
 
 </div>
 
-[link-connecting-to-databases]: /cloud/configuration/connecting-to-databases
+[link-connecting-to-databases]: /cloud/configuration/connecting-to-the-database

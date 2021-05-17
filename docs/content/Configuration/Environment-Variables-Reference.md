@@ -113,7 +113,7 @@ databases [in this guide][link-connecting-to-db].
 | `CUBEJS_DB_DOMAIN`                              | MSSQL                | A domain name within the database to connect to                                                                                                                                                             | A valid domain name within a MSSQL database                      |
 | `CUBEJS_DB_SOCKET_PATH`                         | MySQL                | The path to a Unix socket for a MySQL database                                                                                                                                                              | A valid path to a Unix socket for a MySQL database               |
 | `CUBEJS_DB_CATALOG`                             | Presto               | The catalog within the database to connect to                                                                                                                                                               | A valid catalog name within a Presto database                    |
-| `CUBEJS_DB_SNOWFLAKE_ACCOUNT`                   | Snowflake            | The Snowflake account ID to use when connecting to the database                                                                                                                                             | A valid Snowflake account ID                                     |
+| `CUBEJS_DB_SNOWFLAKE_ACCOUNT`                   | Snowflake            | The Snowflake account ID to use when connecting to the database                                                                                                                                             | [A valid Snowflake account ID][link-snowflake-account]           |
 | `CUBEJS_DB_SNOWFLAKE_REGION`                    | Snowflake            | The Snowflake region to use when connecting to the database                                                                                                                                                 | [A valid Snowflake region][link-snowflake-regions]               |
 | `CUBEJS_DB_SNOWFLAKE_ROLE`                      | Snowflake            | The Snowflake role to use when connecting to the database                                                                                                                                                   | A valid Snowflake role for the account                           |
 | `CUBEJS_DB_SNOWFLAKE_WAREHOUSE`                 | Snowflake            | The Snowflake warehouse to use when connecting to the database                                                                                                                                              | A valid Snowflake warehouse for the account                      |
@@ -168,6 +168,8 @@ databases [in this guide][link-connecting-to-db].
   https://docs.cloudera.com/documentation/enterprise/6/release-notes/topics/rg_cdh_6_download.html
 [link-hive-thrift-versions]: https://github.com/apache/thrift/releases
 [link-hive-versions]: https://hive.apache.org/downloads.html
+[link-snowflake-account]:
+  https://docs.getdbt.com/reference/warehouse-profiles/snowflake-profile#account
 [link-snowflake-regions]:
   https://docs.snowflake.com/en/user-guide/intro-regions.html
 [link-snowflake-connection-options]:
