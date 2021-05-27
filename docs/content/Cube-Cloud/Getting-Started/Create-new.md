@@ -1,18 +1,12 @@
 ---
-title: Getting Started
-permalink: /cloud/getting-started
-category: Cube Cloud Getting Started
-menuOrder: 1
-redirect_from:
-  - /cloud/quickstart
+title: Getting Started with Cube Cloud - Upload with CLI
+permalink: /cloud/getting-started/create
 ---
 
-This guide walks you through setting up Cube Cloud and connecting to your
+This guide walks you through creating a new project on Cube Cloud and connecting to your
 database.
 
-<div class="block-video" style="position: relative; padding-bottom: 56.25%; height: 0;">
-  <iframe src="https://www.loom.com/embed/8ad76276b9d74e8283b7c319a22e4411" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div>
+> LOOM VIDEO HERE
 
 ## Step 1: Create Deployment
 
@@ -30,16 +24,9 @@ region of your choice.
   />
 </div>
 
-## Step 2: Upload your Cube.js project
+## Step 2: Create new project
 
-The next step is to upload your existing Cube.js project to the Cube Cloud.
-
-You can do it by running the following command from terminal in your Cube.js
-project directory.
-
-```bash
-npx cubejs-cli deploy --token <TOKEN>
-```
+...
 
 <div
   style="text-align: center"
