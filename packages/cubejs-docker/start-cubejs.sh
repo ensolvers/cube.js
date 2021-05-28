@@ -1,3 +1,4 @@
-htpasswd -b -c .htpasswd admin $PASSWORD
+cron
+htpasswd -b -c /.htpasswd admin $PASSWORD
 service nginx start
-cubejs start
+cubejs server

@@ -19,12 +19,18 @@ COPY . .
 RUN yarn policies set-version v1.22.5
 
 RUN apt update
-RUN apt install -y awscli nginx apache2-utils
+RUN apt install -y awscli nginx apache2-utils cron
 
 RUN npm install -g serve
 
+# Configure nginx
 RUN mkdir -p /etc/nginx/sites-enabled
 RUN cp nginx.conf /etc/nginx/sites-enabled/default
+
+# Configure cron
+RUN chmod 0644 crontab
+RUN crontab crontab
+RUN touch /cron.log
 
 # There is a problem with release process.
 # We are doing version bump without updating lock files for the docker package.
