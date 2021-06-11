@@ -7,14 +7,17 @@ ENV CUBEJS_DOCKER_IMAGE_TAG=latest
 
 RUN DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
-    && apt-get install -y --no-install-recommends rxvt-unicode libssl1.1 \
+    && apt-get install -y --no-install-recommends rxvt-unicode libssl1.1 git \
     && rm -rf /var/lib/apt/lists/*
 
 ENV TERM rxvt-unicode
 ENV NODE_ENV production
 
 WORKDIR /cube
-COPY . .
+COPY ./nginx.conf .
+COPY ./start-cubejs.sh .
+COPY ./sync-cubejs.sh .
+COPY ./crontab .
 
 RUN yarn policies set-version v1.22.5
 
@@ -47,4 +50,4 @@ WORKDIR /cube/conf
 EXPOSE 4000
 EXPOSE 80
 
-CMD ["bash", "start-cubejs.sh"]
+CMD ["bash", "/cube/start-cubejs.sh"]
