@@ -42,4 +42,4 @@ pretty_assertions = "0.7.1"
 scopeguard = "1.1.0"
 serde = "1.0.115"
 serde_derive = "1.0.115"
-tokio = { version = "1.0", features = ["full", "rt"] }
+tokio = { version = "1.8", features = ["full", "rt"] }
